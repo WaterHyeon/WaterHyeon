@@ -1,4 +1,5 @@
 import React from "react";
+import git from "../assets/git.png";
 import gmail from "../assets/gmail.png";
 import direct from "../assets/direct.png";
 import insta from "../assets/insta.png";
@@ -14,6 +15,16 @@ const Footer = () => {
                     <section class="direct">
                         
                         <ul class="direct">
+
+                            <li>
+                                
+                                <a href="https://github.com/WaterHyeon/WaterHyeon" title="git" alias="git">
+
+                                    <img src={git} alt="git" />
+
+                                </a>
+
+                            </li>
     
                             <li>
     
