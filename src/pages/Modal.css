@@ -1,0 +1,211 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .modal button {
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    position: absolute;
+    right: 30px;
+    top: 22px;
+    font-size: 0.5em;
+    background: #333333;
+    color: #ffffff;
+    padding: 6px 10px;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+  .modal > section {
+    width: 90%;
+    max-width: 450px;
+    margin: 0 auto;
+    border-radius: 0.3rem;
+    background-color: #fff;
+    /* 팝업이 열릴때 스르륵 열리는 효과 */
+    animation: modal-show 0.3s;
+    overflow: hidden;
+  }
+  .modal > section > header {
+    position: relative;
+    padding: 16px 64px 16px 16px;
+    background-color: #f1f1f1;
+    font-weight: 700;
+  }
+  .modal > section > header button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    font-size: 21px;
+    font-weight: 700;
+    text-align: center;
+    color: #999;
+    background-color: transparent;
+  }
+  .modal > section > main {
+    padding: 16px;
+    border-bottom: 1px solid #dee2e6;
+    border-top: 1px solid #dee2e6;
+  }
+  .modal > section > footer {
+    padding: 12px 16px;
+    text-align: right;
+  }
+  .modal > section > footer button {
+    padding: 6px 12px;
+    color: #fff;
+    background-color: #6c757d;
+    border-radius: 5px;
+    font-size: 13px;
+  }
+  .modal.openModal {
+    display: flex;
+    align-items: center;
+    /* 팝업이 열릴때 스르륵 열리는 효과 */
+    animation: modal-bg-show 0.3s;
+  }
+  @keyframes modal-show {
+    from {
+      opacity: 0;
+      margin-top: -50px;
+    }
+    to {
+      opacity: 1;
+      margin-top: 0;
+    }
+  }
+  @keyframes modal-bg-show {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+
+  
+.popup01 {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 4px 4px 5px 5px #00000026;
+  height: 50%;
+  position: fixed;
+  transform: translate(-24%,-55%);
+  width: 50%;
+  z-index: 1000;
+  min-height: 500px;
+  max-height: 500px;
+}
+
+.popup02 {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 4px 4px 5px 5px #00000026;
+  height: 50%;
+  position: fixed;
+  transform: translate(-24%,-55%);
+  width: 50%;
+  z-index: 1000;
+  min-height: 500px;
+  max-height: 500px;
+}
+
+.popup03 {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 4px 4px 5px 5px #00000026;
+  height: 50%;
+  position: fixed;
+  transform: translate(-24%,-55%);
+  width: 50%;
+  z-index: 1000;
+  min-height: 500px;
+  max-height: 500px;
+}
+
+.popup04 {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 4px 4px 5px 5px #00000026;
+  height: 50%;
+  position: fixed;
+  transform: translate(-24%,-55%);
+  width: 50%;
+  z-index: 1000;
+  min-height: 500px;
+  max-height: 500px;
+}
+
+.active {
+    display: block;
+    opacity: 1;
+}
+
+.popup_img {
+    width: 40%;
+    height: 80%;
+    overflow: scroll;
+    float: left;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.popup_img img {
+    display: block;
+    width: 18vw;
+}
+
+.popup_txt {
+    width: 47%;
+    height: auto;
+    float: right;
+    position: relative;
+    top: 10%;
+    right: 5%;
+}
+
+.liststyle {
+  position: absolute;
+  width: 0.5vw;
+  height: 2.42vh;
+  background: rgb(176, 176, 176)
+}
+
+.tit_popup {
+    position: absolute;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 19px;
+    letter-spacing: -0.08em;
+    color: #000000;
+    left: 13px;
+}
+
+
+.sub_popup01 {
+    position: absolute;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.8em;
+    line-height: 180%;
+    letter-spacing: -0.08em;
+    color: #000000;
+    margin-top: 1vh;
+    text-align: left;
+    left: 0;
+}
+
+.sub_popup02 {
+    color: #969696;
+}
